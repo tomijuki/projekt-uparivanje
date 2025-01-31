@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <solutionClass>org.example.Iteracija_2.PairingSolution2</solutionClass>
+    <entityClass>org.example.Student</entityClass>
+
+    <scoreDirectorFactory>
+        <constraintProviderClass>org.example.Iteracija_2.PairingConstraintProvider2</constraintProviderClass>
+    </scoreDirectorFactory>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+    </constructionHeuristic>
+
+    <localSearch>
+        <localSearchType>HILL_CLIMBING</localSearchType>
+        <termination>
+            <bestScoreFeasible>true</bestScoreFeasible>
+        </termination>
+    </localSearch>
+
+</solver>
